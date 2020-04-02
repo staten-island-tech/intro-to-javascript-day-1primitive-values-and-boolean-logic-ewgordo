@@ -40,3 +40,34 @@ if (temperature < 68) {
 }else if (temperature > 76) {
     console.log ("too hot");
 }
+
+
+/////Day 2
+
+// Assessment 1
+
+let students = [
+    "Riya", 
+    "Omor", 
+    "Alan", 
+    "Jaiyu", 
+    "Michael", 
+    "Lisa", 
+    "Richard"];
+
+const filtered = students.filter(students => students.length < 5);
+console.log(filtered);
+
+// Assessment 2
+
+const checkJunshen = students.includes("Junshen");
+console.log (checkJunshen);
+
+function checkAvailability(arr, val) {
+    return arr.some(function(arrVal) {
+      return val === arrVal;
+    });
+  }
+  
+  checkAvailability(students, "Alan"); 
+  checkAvailability(students, "Savva");
